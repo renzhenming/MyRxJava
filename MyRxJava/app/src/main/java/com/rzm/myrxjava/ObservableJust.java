@@ -19,7 +19,7 @@ class ObservableJust<T> extends Observable<T>{
         private final T item;
         private Observer observer;
 
-        public <T> ScalarDisposable(Observer<T> observer, T t) {
+        public ScalarDisposable(Observer<T> observer, T t) {
             this.observer = observer;
             this.item = t;
         }
